@@ -1,0 +1,115 @@
+ 
+Swagger funcionando tbm: 
+http://localhost:8080//swagger-ui/index.html#/unidade-controller
+http://localhost:8080//swagger-ui/index.html#/profissional-controller
+http://localhost:8080//swagger-ui/index.html#/especialidade-controller
+ 
+   [ {
+      "nomeProfissional": null
+  
+    },
+    {
+      "nomeProfissional": "João Santos"
+    
+    },
+    {
+      "nomeProfissional": "Patricia Luna"
+     
+    },
+    {
+      "nomeProfissional": "Carlos Silva"
+    
+    },
+    {
+      "nomeProfissional": "Marcia Lins"
+    
+    }]
+
+==========================
+
+
+   [
+    
+    {
+      "nomeChamado": null
+     
+    },
+    {
+      "nomeChamado": "Corte de Barba"
+      
+    },
+    {
+      "nomeChamado": "Corte de Cabelo"
+     
+    },   
+    {
+      "nomeChamado": "Depilação"
+     
+    }
+    ,
+    {
+      "nomeChamado": "Hidratação Capilar"
+     
+    },
+    {
+      "nomeChamado": "Manicure"
+      
+    },
+    {
+      "nomeChamado": "Maquiagem Facial"
+      
+    },
+    {
+      "nomeChamado": "Maquiagem Corporal"
+      
+    }
+    ,
+    {
+      "nomeChamado": "Pintura de Cabelo"
+     
+    }
+  ]
+  
+  -------------
+
+const servicos = [
+    
+    {
+      "nomeChamado": null
+     
+    },
+    {
+      "nomeChamado": "Corte de Barba"
+      
+    },
+    {
+      "nomeChamado": "Corte de Cabelo"
+     
+    },   
+    {
+      "nomeChamado": "Depilação"
+     
+    }
+    ,
+    {
+      "nomeChamado": "Hidratação Capilar"
+     
+    },
+    {
+      "nomeChamado": "Manicure"
+      
+    },
+    {
+      "nomeChamado": "Maquiagem Facial"
+      
+    },
+    {
+      "nomeChamado": "Maquiagem Corporal"
+      
+    }
+    ,
+    {
+      "nomeChamado": "Pintura de Cabelo"
+     
+    }
+  ];

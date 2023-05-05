@@ -1,0 +1,43 @@
+INSERT INTO `system_entrega`.`tbl_entrega`
+(`id_entrega`,
+`data_entrega`,
+`endereco_entrega`
+)
+VALUES
+(1,
+'29/04/2023 13:10:00',
+'Rua Abc, 123'
+);
+
+INSERT INTO `system_entrega`.`tbl_entrega`
+(`id_entrega`,
+`data_entrega`,
+`endereco_entrega`
+)
+VALUES
+(2,
+'29/04/2023 14:-5:00',
+'Rua Cde, 456'
+);
+
+INSERT INTO `system_entrega`.`tbl_entrega`
+(`id_entrega`,
+`data_entrega`,
+`endereco_entrega`
+)
+VALUES
+(3,
+'30/04/2023 09:45:00',
+'Rua Efg, 789'
+);
+
+INSERT INTO `system_entrega`.`tbl_entrega`
+(`id_entrega`,
+`data_entrega`,
+`endereco_entrega`
+)
+VALUES
+(4,
+'01/05/2023 13:28:00',
+'Rua Ghi, 012'
+);

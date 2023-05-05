@@ -1,0 +1,122 @@
+INSERT INTO `system_chamado`.`tbl_entrega`
+(`id_entrega`,
+`data_entrega`,
+`endereco_entrega`,
+`frete`
+)
+VALUES
+(1,
+'10/03/2023',
+'Rua Goias, 500 Marape Santos',
+6.00
+);
+
+
+INSERT INTO `system_chamado`.`tbl_produto`
+(`id_produto`,
+`titulo`,
+`descricao`,
+`cor`,
+`tamanho`)
+VALUES
+(1,
+'Geladeira',
+'Parou de funcionar',
+'branca',
+'nao se aplica'
+);
+
+
+INSERT INTO `system_chamado`.`tbl_tipo_compra`
+(`id_tipo_compra`,
+`tipo`)
+VALUES
+(1,
+'Compra Protegida'
+);
+
+INSERT INTO `system_chamado`.`tbl_carrinho`
+(`id_carrinho`,
+`id_produto`,
+`quantidade`)
+VALUES
+(1,
+1,
+1);
+
+
+INSERT INTO `system_chamado`.`tbl_cliente`
+(`id_cliente`,
+`cpf_cliente`,
+`email_cliente`,
+`endereco_cliente`,
+`nome_cliente`
+)
+VALUES
+(1,
+'123456890-11',
+'joao.goncalves@email.com.br',
+'Rua Joaquim Tavora, 234 Vila Voturuá Santos',
+'Joao Goncalves'
+);
+
+
+INSERT INTO `system_chamado`.`tbl_pagamento`
+(`id_pagamento`,
+`data_pagamento`,
+`tipo_pagamento`,
+`valor`
+)
+VALUES
+(1,
+'05/03/2023',
+'cartao',
+3000.00
+);
+
+INSERT INTO `system_chamado`.`tbl_compra`
+(`id_compra`,
+`id_cliente`,
+`id_tipo_compra`,
+`data_compra`
+)
+VALUES
+(1,
+1,
+1,
+'05/03/2023');
+
+INSERT INTO `system_chamado`.`tbl_compra_carrinho`
+(`id_compra_carrinho`,
+`id_compra`,
+`id_carrinho`
+)
+VALUES
+(1,
+1,
+1);
+
+
+
+INSERT INTO `system_chamado`.`tbl_compra_entrega`
+(`id_compra_entrega`,
+`id_compra`,
+`id_entrega`
+)
+VALUES
+(1,
+1,
+1);
+
+INSERT INTO `system_chamado`.`tbl_compra_pagamento`
+(`id_compra_pagamento`,
+`id_compra`,
+`id_pagamento`
+)
+VALUES
+(1,
+1,
+1);
+
+
+

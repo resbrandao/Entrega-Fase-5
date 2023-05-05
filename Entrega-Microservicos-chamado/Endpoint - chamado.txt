@@ -1,0 +1,7 @@
+GET
+http://localhost:8083/chamados
+
+POST
+http://localhost:8083/chamados
+
+

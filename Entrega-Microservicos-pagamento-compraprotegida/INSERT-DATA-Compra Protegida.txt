@@ -1,0 +1,127 @@
+
+INSERT INTO `system_compra_protegida`.`tbl_cliente`
+(`id_cliente`,
+`email`,
+`endereço`,
+`nome_cliente`,
+`telefone`)
+VALUES
+(1,
+'mariasilva@hotmail.com',
+'Rua da Paz, 126 São Paulo',
+'Maria da Silva',
+'123456');
+
+------------
+
+INSERT INTO `system_compra_protegida`.`tbl_cliente`
+(`id_cliente`,
+`email`,
+`endereço`,
+`nome_cliente`,
+`telefone`)
+VALUES
+(2,
+'joaobarbosa@hotmail.com',
+'Rua da Correria, 745 São Paulo',
+'João Barbosa',
+'1234564433');
+
+
+------------------------------------------
+INSERT INTO `system_compra_protegida`.`tbl_cartao`
+(`id_cartao`,
+`bandeira_cartao`,
+`codigo_seguraca`,
+`data_validade`,
+`nome_cliente`,
+`numero_cartao`,
+`cliente_id_cliente`)
+VALUES
+(1,
+'Visa',
+'123',
+'2026-10-20 23:59:59.999999',
+'Maria da Silva',
+'12345678910',
+1);
+
+------
+
+INSERT INTO `system_compra_protegida`.`tbl_cartao`
+(`id_cartao`,
+`bandeira_cartao`,
+`codigo_seguraca`,
+`data_validade`,
+`nome_cliente`,
+`numero_cartao`,
+`cliente_id_cliente`)
+VALUES
+(2,
+'Master',
+'545',
+'2030-05-12 23:59:59.999999',
+'João Barbosa Lopes',
+'1234567891012',
+2);
+==========================
+
+INSERT INTO `system_compra_protegida`.`tbl_dados_processamento`
+(`id_dados_processamento`,
+`tipo_moeda`,
+`total_transacao`)
+VALUES
+(1,
+'Real',
+2400.20);
+
+---------------------------
+
+INSERT INTO `system_compra_protegida`.`tbl_dados_processamento`
+(`id_dados_processamento`,
+`tipo_moeda`,
+`total_transacao`)
+VALUES
+(2,
+'Real',
+3500.80);
+
+===============================
+
+INSERT INTO `system_compra_protegida`.`tbl_compra_protegida`
+(`id_compra_protegida`,
+`data_processamento`,
+`mensagem_processamento`,
+`status_processamento`,
+`tipo_compra_protegida`,
+`cartao_id_cartao`,
+`cliente_pagamento_id_cliente`,
+`compra_protegida_dados_processamento`)
+VALUES
+(1,
+'2023-10-20 23:59:59.999999',
+'Sucesso',
+'Processado',
+'Cartao',
+1,
+1,
+1);
+===================================
+INSERT INTO `system_compra_protegida`.`tbl_compra_protegida`
+(`id_compra_protegida`,
+`data_processamento`,
+`mensagem_processamento`,
+`status_processamento`,
+`tipo_compra_protegida`,
+`cartao_id_cartao`,
+`cliente_pagamento_id_cliente`,
+`compra_protegida_dados_processamento`)
+VALUES
+(2,
+'2023-11-15 23:59:59.999999',
+'Falha',
+'Processado',
+'Cartao',
+2,
+2,
+2);

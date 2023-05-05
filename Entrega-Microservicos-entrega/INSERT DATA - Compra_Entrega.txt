@@ -1,0 +1,10 @@
+INSERT INTO `system_entrega`.`tbl_compra_entrega`
+(`id_compra_entrega`,
+`id_compra`,
+`id_entrega`
+)
+VALUES
+(1,
+1,
+1
+);
